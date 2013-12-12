@@ -1,4 +1,21 @@
-<?php ?>
+<?php
+
+include ('../Lib/adodb5/adodb-pager.inc.php');
+include ('../Lib/adodb5/adodb.inc.php');
+include("../Modelo/Conexion.php");
+include("../Modelo/Modelo.php");
+include("../Control/RegistroControl.php");
+
+if (isset($_POST['entrar'])) {
+    $RC = new RegistroControl();
+    $rs = $RC->registrar($_POST);
+    if($rs==1){
+        print_r("Registro correcto");
+    }else{
+        print_r("Registro incorrecto revisar contraseñas");
+    }
+}
+?>
 
 <!DOCTYPE html>
 <html>
@@ -14,7 +31,7 @@
             <div id="titulo">Registrate!!!</div>
             <form id= "formu"  method="post" >
                 <div class="centro">
-                    
+
                     <table>
                         <tr>
                             <td><label for="nombre">Nombre</label></td>
@@ -22,7 +39,7 @@
                         </tr>
                         <tr>
                             <td><label for="nombre">Usuario</label></td>
-                            <td><input id = "usuario" name = "usario" type="text"/></td>
+                            <td><input id = "usuario" name = "usuario" type="text"/></td>
                         </tr>
                         <tr>
                             <td><label for="password">Password</label></td>
