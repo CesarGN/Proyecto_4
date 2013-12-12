@@ -12,31 +12,36 @@ if(!isset($_SESSION['usuario'])){
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="../CSS/General.css" rel="stylesheet">
         <link href="../CSS/Menu.css" rel="stylesheet">
-        <link href="../CSS/Botones.css" rel="stylesheet">
+        
     </head>
     <body>
         <div id="Principal">
             <h5>Men&uacute;!!!</h5></div>
         
-        <div id="formulario">
+        <div id="fmenu">
            
             <div class="centro">
                 <table>
                     <tr>
-                        <a href="#" class="crear">CREAR</a>
-                    <button>
-                        Crear tarea
+                        <td>
+                    <button class="crear">
+                        Crear Tarea
                     </button>
+                            </td>
                     </tr>
                     <tr>
-                    <button>
-                        Revisar
+                        <td>
+                    <button class="crear">
+                        Ver
                     </button>
+                            </td>
                     </tr>
                     <tr>
-                    <button>
-                        
+                        <td>
+                    <button class="crear">
+                        Sincronizar
                     </button>
+                            </td>
                     </tr>
                 </table>    
             </div>

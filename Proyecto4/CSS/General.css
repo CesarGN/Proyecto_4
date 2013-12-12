@@ -13,14 +13,6 @@ root {
     background-size: 100% 100%; 
 }
 
-#Principal{
-    width: 80%;
-    height: auto;
-    position: initial; 
-    background: url(../Recursos/menugrande.jpeg) no-repeat ;
-    background-size: 100% 100%; 
-}
-
 #formulario{
     width: 27%;
     height: 97%;
@@ -35,9 +27,3 @@ root {
     font-style: italic;
  }
 
- #Principal h5{
-     color: #EFF2FB;
-    font-size:50px;
-    font-weight: bold;
-    font-style: italic;
- }
