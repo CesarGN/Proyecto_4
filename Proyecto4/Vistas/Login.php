@@ -19,7 +19,7 @@ if (isset($_POST['entrar'])) {
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../CSS/estilos.css" />
+        <link rel="stylesheet" type="text/css" href="../CSS/login.css" />
     </head>
     <body>
         <div id="logins">
