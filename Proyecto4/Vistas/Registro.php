@@ -11,7 +11,7 @@
     <body>
         <div id="imagen"></div>
         <div id="formulario">
-            <div id="titulo">Registrate!!!</div>
+            <div id="titulo"> <h3>Registrate!!!</h3> </div>
             <form id= "formu"  method="post" >
                 <div class="centro">
                     

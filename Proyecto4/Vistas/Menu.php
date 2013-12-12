@@ -7,14 +7,18 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="../CSS/General.css" rel="stylesheet">
         <link href="../CSS/Menu.css" rel="stylesheet">
+        <link href="../CSS/Botones.css" rel="stylesheet">
     </head>
     <body>
-        <div id="imagen"></div>
+        <div id="Principal">
+            <h5>Men&uacute;!!!</h5></div>
+        
         <div id="formulario">
-            <div id="titulo">Men&uacute;!!!</div>
+           
             <div class="centro">
                 <table>
                     <tr>
+                        <a href="#" class="crear">CREAR</a>
                     <button>
                         Crear tarea
                     </button>
