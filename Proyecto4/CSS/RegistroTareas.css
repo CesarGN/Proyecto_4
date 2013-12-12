@@ -1,6 +1,11 @@
-
-
 root { 
     display: block;
 }
 
+.texto{
+    width: 170%;
+}
+
+td{
+    padding-left: 10%;
+}

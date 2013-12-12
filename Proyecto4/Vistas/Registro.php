@@ -29,7 +29,7 @@ if (isset($_POST['entrar'])) {
         <div id="imagen"></div>
         <div id="formulario">
             <div id="titulo"> <h3>Registrate!!!</h3> </div>
-            <form id= "formu"  method="post" >
+            <form   method="post" >
                 <div class="centro">
 
                     <table>

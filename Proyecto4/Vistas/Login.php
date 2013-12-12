@@ -9,9 +9,9 @@ include("../Control/LoginControl.php");
 if (isset($_POST['entrar'])) {
     $LC = new LoginControl();
     if($LC->valida($_POST)==0){
-        print_r("No exites");
+        $LC->alerta("NO EXISTES");
     }else{
-        print_r("Contrasena/usuario incorrecto");
+        $LC->alerta("Contrasena/usuario incorrecto");
     }
 
 }
