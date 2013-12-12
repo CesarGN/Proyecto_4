@@ -1,5 +1,75 @@
+#formulario{
+   background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	left top,
+	color-stop(0.25, #0DD6C9),
+	color-stop(0.79, #9FEBB9)
+);
 
+   background-image: -webkit-gradient(
+	linear,
+	right top,
+	left bottom,
+	color-stop(0.23, #DE2828),
+	color-stop(0.25, #D92020),
+	color-stop(0.79, #BD2F3E),
+	color-stop(1, #C75656)
+);
+
+   background: rgba(147,206,222,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(81,169,194,0.98) 68%, rgba(73,165,191,0.98) 74%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%,  color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,0.99)), color-stop(68%, rgba(81,169,194,0.98)), color-stop(74%, rgba(73,165,191,0.98)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(81,169,194,0.98) 68%, rgba(73,165,191,0.98) 74%);
+background: -o-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(81,169,194,0.98) 68%, rgba(73,165,191,0.98) 74%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(81,169,194,0.98) 68%, rgba(73,165,191,0.98) 74%);
+background: radial-gradient(ellipse at center, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(81,169,194,0.98) 68%, rgba(73,165,191,0.98) 74%);
+
+   
+-webkit-box-shadow: 10px 10px 54px 20px rgba(30,96,201,0.6);
+-moz-box-shadow: 10px 10px 54px 20px rgba(30,96,201,0.6);
+box-shadow: 10px 10px 54px 20px rgba(30,96,201,0.6);
+
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px inset #b03a5d;
+
+
+}
+
+#formulario{
+     color: #0B0B61;
+     text-shadow: 0px -1px 0px #000;
+}
+
+#formulario fieldset{
+    padding: 80px;
+    alignment-baseline: 50px;
+}
+
+#imagen{
+    width: 70%;
+    height: 97%;
+    position: absolute; 
+    background:url(../Recursos/registrogrande.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+#formulario{
+    width: 27%;
+    
+    height: 97%;
+    position: absolute;
+    left: 72%;
+}
 
 .centro{
     padding-top: 50px;
+}
+
+#titulo h3{
+    color: #084B8A;
 }
