@@ -32,7 +32,7 @@ if(!isset($_SESSION['usuario'])){
                     <tr>
                         <td>
                     <button class="crear">
-                        Ver
+                        Ver Tarea   
                     </button>
                             </td>
                     </tr>
@@ -46,6 +46,14 @@ if(!isset($_SESSION['usuario'])){
                 </table>    
             </div>
 
+        </div>
+        
+        <div id="imagenmenu"></div>
+        
+        <div id="creditos" >
+        Garcia Noyola Cesar Fernando
+        Alvarez Miranda Omar
+        Gomez Lopez Elias
         </div>
     </body>
 </html>
