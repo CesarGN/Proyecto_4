@@ -1,9 +1,10 @@
 <?php
 session_start();
 if (!isset($_SESSION['usuario'])) {
+    
     header("Location: Login.php");
 }
-
+print_r($_SESSION);
 include ('../Lib/adodb5/adodb-pager.inc.php');
 include ('../Lib/adodb5/adodb.inc.php');
 include("../Modelo/Conexion.php");
@@ -12,7 +13,8 @@ include("../Control/RegistroTareasControl.php");
 
 if (isset($_POST['nombre'])) {
     $RT = new RegistroTareasControl();
-    $rs = $RT->registra_proyecto($_POST, $_SESSION['id_usuario']);
+    $RT->registra_proyecto($_POST, $_SESSION['id_usuario']);
+    
 }
 ?>
 <html>

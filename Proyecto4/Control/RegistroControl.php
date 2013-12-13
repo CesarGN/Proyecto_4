@@ -7,9 +7,9 @@ class RegistroControl extends Modelo {
         if($datos['password']==$datos['password2']){
              $sql="INSERT INTO usuario (nombre,usuario,contrasena) VALUES ('".$datos['nombre']."','".$datos['usuario']."','".$datos['password']."')";
              $this->sql($sql,"RegistroControl registrar");
-             return 1;//regresa 1 si se registro correctamente
+             $this->alerta("Registro correcto");
         }
-        return 0;//regresa 0 si no son contraseñas iguales       
+        $this->alerta("Registro incorrecto revisar contraseñas");    
     }
 }
 ?>

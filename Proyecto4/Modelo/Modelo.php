@@ -25,11 +25,7 @@ class Modelo extends Conexion {
     }
 
     public function alerta($mensaje) {
-        ?>
-        <script>
-            alert(<?php echo $mensaje; ?>);
-        </script>
-        <?php
+       echo "<script>alert(\"$mensaje\");</script>";                       
     }
 
 }

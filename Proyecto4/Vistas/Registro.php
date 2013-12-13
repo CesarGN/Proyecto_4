@@ -8,12 +8,8 @@ include("../Control/RegistroControl.php");
 
 if (isset($_POST['entrar'])) {
     $RC = new RegistroControl();
-    $rs = $RC->registrar($_POST);
-    if($rs==1){
-        print_r("Registro correcto");
-    }else{
-        print_r("Registro incorrecto revisar contraseñas");
-    }
+    $RC->registrar($_POST);
+    
 }
 ?>
 

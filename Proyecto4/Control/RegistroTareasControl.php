@@ -11,7 +11,7 @@ class RegistroTareasControl extends Modelo {
         $sql = "INSERT INTO proyectos (id_usuario,nombre,materia,fecha_inicio,fecha_final,estatus)
                 values ('" . $id_usu . "','" . $nombre . "','" . $materia . "','" . $fecha_ini . "','" . $fecha_fin . "','" . $estatus . "')";
         $this->sql($sql, 'RegistroTareasControl registra_proyecto');
-        return true;
+        $this->alerta("TAREA REGISTRADA");
     }
 
 }
