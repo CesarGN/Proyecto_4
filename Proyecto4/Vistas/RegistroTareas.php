@@ -88,6 +88,7 @@ if (isset($_POST['nombre'])) {
                                 <input type= "hidden" id="id_usuario" name="id_usuario" value= "<?php echo $_SESSION['id_usuario']; ?>">
                                 <button type="submit" class="btn-danger" id="guardar1" name="guardar1">Registrar2</button>
                                 <input  type="button" class="btn-danger" id="guardar2" name="guardar2"value="Registrar" style="visibility: hidden;">
+                                
                             </td>
                         </tr>
                     </table>    

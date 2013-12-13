@@ -132,7 +132,7 @@ body{
     top:1px;
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:800px){
     #logins fieldset{
         width:auto;
     } 
@@ -144,28 +144,56 @@ body{
     #logins h2{
         width:auto;
     }
-    
+
     .centro {
         width: auto;
     }
+    #usuario{
+        width: auto;    
+        padding:1px;
+        border:solid 1px #DEDEDE;
+        border-radius:5px;
+    }
+
+    #password{
+        width: auto;
+        padding:1px;
+        border:solid 1px #DEDEDE;
+        border-radius:5px;
+    }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-height:480px){
+    
+    #usuario{
+        height:  auto;    
+        padding:1px;
+        border:solid 1px #DEDEDE;
+        border-radius:5px;
+    }
 
+    #password{
+        height:  auto;
+        padding:1px;
+        border:solid 1px #DEDEDE;
+        border-radius:5px;
+    }
+    
+    
     #logins{
-        width:auto;
+        height:auto;
     } 
 
     #logins fieldset{
-        width:auto;
+        height:auto;
     } 
 
     #logins h2{
         width:auto;
         height:52px;
     }
-    
+
     .centro {
-        width: auto;
+        height: auto;
     }
 }

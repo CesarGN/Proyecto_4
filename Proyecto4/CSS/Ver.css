@@ -80,54 +80,58 @@ table{
     background-position: -202px -110px;
 }
 
-<<<<<<< HEAD
 .icono#borrar{
     background-position: -383px -289px;
-=======
+}
 #iconos #borrar{
     background-position: -381px -289px;
 }
 
-@media screen and (max-width:600px){
-    #titulo{
-        width:auto;
-    } 
 
-    .centro{
-        width:auto;
-    } 
+@media screen and (max-width:800px){
 
-    #tabla{
-        width:auto;
-    }
-    
-    table {
-        width: auto;
-    }
+    table{
+    width: 50%;
 }
 
-@media screen and (max-width:320px){
-     #titulo{
-        width:auto;
-    } 
-
-    .centro{
-        width:auto;
-    } 
-
-    #tabla{
-        width:auto;
-    }
+#tabla{
+    width: 80%;
+    top:48%; 
+}
     
-    table {
-        width: auto;
+    #titulo{
+        width: 780px;
+        height:70px;
     }
 
-    #th{
-        width:auto;
-        height:52px;
+    #imagen{
+    width: 780px;
+    height: 70px;
+    background-size: 100% 100%;
+    top: 1%;
+    position: absolute;
+    background:url(../Recursos/agua.jpeg) no-repeat;
+}
+.centro{
+    left: 20%;
+    right: 20%;
+    padding-left: 3%;
+}
+    #iconos a{    
+    background:url('../Recursos/icono.jpg') no-repeat;
+    height:40px;
+    width:40px;
+    display:block;
+    position: inherit;
+    
+}
+}
+
+@media screen and (max-width:480px){
+
+    #titulo{
+        width: 80px;
+        height:80px;
     }
-    
-    
->>>>>>> 560c1fe74c8a0890fc96b5c6372641ffe352b651
+
 }
