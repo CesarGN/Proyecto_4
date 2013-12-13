@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['usuario'])) {  
+if (!isset($_SESSION['usuario'])) {
     header("Location: Login.php");
 }
 
@@ -13,7 +13,6 @@ include("../Control/RegistroTareasControl.php");
 if (isset($_POST['nombre'])) {
     $RT = new RegistroTareasControl();
     $RT->registra_proyecto($_POST, $_SESSION['id_usuario']);
-    
 }
 ?>
 <html>
@@ -26,9 +25,11 @@ if (isset($_POST['nombre'])) {
         <script src="../Js/insertar.js"></script>
     </head>
     <body>
+        
         <div id="Principal">
-            <h5>Registra Tarea!!!</h5>
+           <h5>Registra Tarea!!! </h5>
         </div>
+        <div id="sesion"><a href="../Modelo/Cerrar.php">Cerrar sesion</a></div>
         <div id="imagen"></div>
         <div id="formulario">
             <div id="titulo"> <h3>DATOS :</h3> </div>
@@ -88,7 +89,7 @@ if (isset($_POST['nombre'])) {
                                 <input type= "hidden" id="id_usuario" name="id_usuario" value= "<?php echo $_SESSION['id_usuario']; ?>">
                                 <button type="submit" class="btn-danger" id="guardar1" name="guardar1">Registrar2</button>
                                 <input  type="button" class="btn-danger" id="guardar2" name="guardar2"value="Registrar" style="visibility: hidden;">
-                                
+
                             </td>
                         </tr>
                     </table>    

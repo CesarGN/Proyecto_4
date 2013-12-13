@@ -30,6 +30,7 @@ $datos = $AC->regresa_tarea($_GET['id_pro']);
         <div id="Principal">
             <h5>Actualiza Tarea!!!</h5>
         </div>
+        <div id="sesion"><a href="../Modelo/Cerrar.php">Cerrar sesion</a></div>
         <div id="imagen2"></div>
         <div id="formulario">
             <div id="titulo"> <h3>Datos :</h3> </div>

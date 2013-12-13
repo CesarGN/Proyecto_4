@@ -19,11 +19,14 @@ $id_usu = $_SESSION['id_usuario'];
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="../CSS/General.css" rel="stylesheet">
         <link href="../CSS/Ver.css" rel="stylesheet">
     </head>
     <body>
         <div id="imagen"></div>
+        
         <div id="titulo">Ve , Actualiza y Borra Tus Tareas !!!</div>
+        <div id="sesion"><a href="../Modelo/Cerrar.php">Cerrar sesion</a></div>
         <div id="tabla">
             <div class="centro">
                 <table >

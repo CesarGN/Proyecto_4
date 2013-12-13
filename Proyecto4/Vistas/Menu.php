@@ -3,7 +3,6 @@ session_start();
 if (!isset($_SESSION['usuario'])) {
     header("Location: Login.php");
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -14,12 +13,13 @@ if (!isset($_SESSION['usuario'])) {
         <link href="../CSS/General.css" rel="stylesheet">
         <link href="../CSS/Menu.css" rel="stylesheet">
         <script src="../Js/sincroniza.js"></script>
-        <?PHP // include ('../Js/sincroniza.php'); ?>
+        <?PHP // include ('../Js/sincroniza.php');  ?>
     </head>
     <body>
         <div id="Principal">
-            <h5>Men&uacute;!!!</h5></div>
-
+            <h5>Men&uacute;!!!</h5>
+        </div>
+        <div id="sesion"><a href="../Modelo/Cerrar.php">Cerrar sesion</a></div>
         <div id="fmenu">
 
             <div class="centro">
@@ -41,15 +41,15 @@ if (!isset($_SESSION['usuario'])) {
         <div id="imagenmenu"></div>
 
         <div id="creditos" >
-<<<<<<< HEAD
+            <<<<<<< HEAD
             Garcia Noyola Cesar Fernando
             Alvarez Miranda Omar
             Gomez Lopez Elias
             INTEGRANTES EQUIPO :       
-=======
-             INTEGRANTES EQUIPO :       
+            =======
+            INTEGRANTES EQUIPO :       
 
->>>>>>> 14c03b2a5adc8bacef377185dc97a8031587b169
+            >>>>>>> 14c03b2a5adc8bacef377185dc97a8031587b169
         </div>
         <div id="creditos"> * Garcia Noyola Cesar Fernando</div>
         <div id="creditos"> * Alvarez Miranda Omar </div>

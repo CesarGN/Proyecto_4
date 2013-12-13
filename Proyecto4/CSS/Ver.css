@@ -15,12 +15,12 @@ root {
 
 #titulo{
     color: #0B4C5F;
-    top: 32%;
+    top: 28%;
     font-size:40px;
     font-weight: bold;
     font-style: italic;
     width: 99%;
-    height: 15%;
+    height: 7%;
     position: absolute;
     background: rgba(147,206,222,1);
     background: -moz-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(73,165,191,0.98) 71%, rgba(73,165,191,0.98) 75%);
@@ -51,7 +51,7 @@ table{
     width: 99%;
     background-color: #0DD6C9;
     position: absolute;
-    top:48%; 
+    top:40%; 
 }
 .centro{
     left: 20%;
@@ -80,10 +80,6 @@ table{
     background-position: -202px -110px;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 14c03b2a5adc8bacef377185dc97a8031587b169
 .icono#borrar{
     background-position: -383px -289px;
 }
@@ -138,11 +134,16 @@ table{
         height:80px;
     }
 
-<<<<<<< HEAD
+ HEAD
     #th{
         width:auto;
         height:52px;
     }
-=======
->>>>>>> 14c03b2a5adc8bacef377185dc97a8031587b169
+}
+
+#sesion{
+  background-color: red;
+  top:35%;
+  position: absolute;
+  left: 93%;
 }
