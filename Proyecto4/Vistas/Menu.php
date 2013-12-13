@@ -51,9 +51,10 @@ if(!isset($_SESSION['usuario'])){
         <div id="imagenmenu"></div>
         
         <div id="creditos" >
-        Garcia Noyola Cesar Fernando
-        Alvarez Miranda Omar
-        Gomez Lopez Elias
+             INTEGRANTES EQUIPO :       
         </div>
+         <div id="creditos"> * Garcia Noyola Cesar Fernando</div>
+         <div id="creditos"> * Alvarez Miranda Omar </div>
+         <div id="creditos"> * Gomez Lopez Elias</div>
     </body>
 </html>

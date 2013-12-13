@@ -27,9 +27,12 @@ $datos = $AC->regresa_tarea($_GET['id_pro']);
         <script src="../Js/insertar.js"></script>
     </head>
     <body>
-        <div id="imagen"></div>
+        <div id="Principal">
+            <h5>Actualiza Tarea!!!</h5>
+        </div>
+        <div id="imagen2"></div>
         <div id="formulario">
-            <div id="titulo"> <h3>Actualiza Tarea!!!</h3> </div>
+            <div id="titulo"> <h3>Datos :</h3> </div>
             <form method="post" >
                 <div class="centro">
 

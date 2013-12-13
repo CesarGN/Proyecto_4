@@ -22,8 +22,8 @@ $id_usu = $_SESSION['id_usuario'];
         <link href="../CSS/Ver.css" rel="stylesheet">
     </head>
     <body>
-        <div id="imagen">Imagen</div>
-        <div id="titulo">Ve, actualiza y borra tus tareas</div>
+        <div id="imagen"></div>
+        <div id="titulo">Ve , Actualiza y Borra Tus Tareas !!!</div>
         <div id="tabla">
             <div class="centro">
                 <table >

@@ -189,3 +189,11 @@ td{
 #opc:focus{
     box-shadow:0 0 15px #036;
 }
+
+#imagen2{
+    width: 70%;
+    height: 97%;
+    position: absolute; 
+    background:url(../Recursos/actualizagrande.jpg) no-repeat;
+    background-size: 100% 100%;
+}

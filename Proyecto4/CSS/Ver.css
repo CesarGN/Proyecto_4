@@ -6,22 +6,31 @@ root {
 
 #imagen{
     width: 99%;
-    height: 30%;
-    background-color: red; 
+    height: 26%;
     background-size: 100% 100%;
     top: 1%;
     position: absolute;
+    background:url(../Recursos/agua.jpeg) no-repeat;
 }
 
 #titulo{
+    color: #0B4C5F;
     top: 32%;
     font-size:40px;
     font-weight: bold;
     font-style: italic;
     width: 99%;
     height: 15%;
-    background-color: blue;
     position: absolute;
+    background: rgba(147,206,222,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(73,165,191,0.98) 71%, rgba(73,165,191,0.98) 75%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%,  color-stop(0%, rgba(147,206,222,1)), color-stop(41%, rgba(117,189,209,0.99)), color-stop(71%, rgba(73,165,191,0.98)), color-stop(75%, rgba(73,165,191,0.98)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(73,165,191,0.98) 71%, rgba(73,165,191,0.98) 75%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(73,165,191,0.98) 71%, rgba(73,165,191,0.98) 75%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(73,165,191,0.98) 71%, rgba(73,165,191,0.98) 75%);
+    background: radial-gradient(ellipse at center, rgba(147,206,222,1) 0%, rgba(117,189,209,0.99) 41%, rgba(73,165,191,0.98) 71%, rgba(73,165,191,0.98) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93cede', endColorstr='#49a5bf', GradientType=1 );
+
 }
 td{
     text-align: center;
@@ -48,6 +57,15 @@ table{
     left: 20%;
     right: 20%;
     padding-left: 20%;
+
+    background: rgba(226,226,226,1);
+    background: -moz-linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(226,226,226,1)), color-stop(50%, rgba(219,219,219,1)), color-stop(51%, rgba(209,209,209,1)), color-stop(100%, rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    background: linear-gradient(45deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=1 );
 }
 #iconos a{    
     background:url('../Recursos/icono.jpg') no-repeat;
@@ -62,4 +80,47 @@ table{
 
 #iconos #borrar{
     background-position: -381px -289px;
+}
+
+@media screen and (max-width:600px){
+    #titulo{
+        width:auto;
+    } 
+
+    .centro{
+        width:auto;
+    } 
+
+    #tabla{
+        width:auto;
+    }
+    
+    table {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:320px){
+     #titulo{
+        width:auto;
+    } 
+
+    .centro{
+        width:auto;
+    } 
+
+    #tabla{
+        width:auto;
+    }
+    
+    table {
+        width: auto;
+    }
+
+    #th{
+        width:auto;
+        height:52px;
+    }
+    
+    
 }

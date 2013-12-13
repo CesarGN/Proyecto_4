@@ -165,8 +165,9 @@
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 9px solid #00ad9f;
 
-    width: 15%;
+    width: 18%;
     height: max-content;
     left:30%;
     color: #FBEFF5;
+    padding-top: 2%;
 }

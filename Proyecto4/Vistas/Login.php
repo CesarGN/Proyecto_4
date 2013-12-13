@@ -33,7 +33,7 @@ if (isset($_POST['entrar'])) {
                         </p>
 
 
-                        <button id="entrar" type="submit" name="entrar" value="Entrar">Entrar</button>
+                        <button id="entrar" type="submit" name="entrar" value="Entrar" class="entrar">Entrar</button>
 
                     </fieldset>
                 </form>
