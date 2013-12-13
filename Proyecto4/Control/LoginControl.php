@@ -7,13 +7,13 @@ class LoginControl extends Modelo {
         $rs = $this->sql($sql, "LoginControl valida");
         $rows = $rs->GetArray();
         if(count($rows)==0){
-            $this->alerta("NO EXISTES");
+            $this->alerta("NO EXISTES, FAVOR DE REGISTRARTE");
         }else{
             if($datos['password']==$rows[0][1]){
                 $this->inicia_sesion($datos['usuario'],$rows[0][0]);
                 header("Location: Menu.php");
             }else{
-                $LC->alerta("Contrasena/usuario incorrecto");
+                $this->alerta("Contrasena/usuario incorrecto");
             }
         }
         

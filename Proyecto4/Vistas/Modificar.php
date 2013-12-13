@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_SESSION['usuario'])) {  
+if (!isset($_SESSION['usuario'])) {
     header("Location: Login.php");
 }
 
@@ -8,13 +8,14 @@ include ('../Lib/adodb5/adodb-pager.inc.php');
 include ('../Lib/adodb5/adodb.inc.php');
 include("../Modelo/Conexion.php");
 include("../Modelo/Modelo.php");
-include("../Control/RegistroTareasControl.php");
-
-if (isset($_POST['nombre'])) {
-    $RT = new RegistroTareasControl();
-    $RT->registra_proyecto($_POST, $_SESSION['id_usuario']);
-    
+include("../Control/ModificarControl.php");
+$AC = new ModificarControl();
+if (isset($_POST['actualiza'])) {
+    //print_r($_POST);
+    $AC->actualiza($_POST,$_GET['id_pro']);
 }
+
+$datos = $AC->regresa_tarea($_GET['id_pro']);
 ?>
 <html>
     <head>
@@ -26,23 +27,20 @@ if (isset($_POST['nombre'])) {
         <script src="../Js/insertar.js"></script>
     </head>
     <body>
-        <div id="Principal">
-            <h5>Registra Tarea!!!</h5>
-        </div>
         <div id="imagen"></div>
         <div id="formulario">
-            <div id="titulo"> <h3>DATOS :</h3> </div>
+            <div id="titulo"> <h3>Actualiza Tarea!!!</h3> </div>
             <form method="post" >
                 <div class="centro">
 
                     <table>
                         <tr>
                             <td><label for="nombre">Nombre</label></td>
-                            <td><input class="texto" id = "nombre" name = "nombre" type="text"/></td>
+                            <td><input class="texto" id = "nombre" name = "nombre" type="text" value="<?php echo $datos[0][0]; ?>"/></td>
                         </tr>
                         <tr>
                             <td><label  for="materia">Materia</label></td>
-                            <td> <input class="texto" list="materias" name="materia" id="materia">
+                            <td> <input class="texto" list="materias" name="materia" id="materia" value="<?php echo $datos[0][1]; ?>">
                                 <datalist id="materias">
                                     <option value="TOPICOS AVANZADOS DE PROGRAMACION WEB">
                                     <option value="PROGRAMACION WEB">
@@ -55,15 +53,15 @@ if (isset($_POST['nombre'])) {
                         </tr>
                         <tr>
                             <td><label  for="fechai">Fecha inicio</label></td>
-                            <td><input  type="date" name="fechai" id="fechai"></td>
+                            <td><input  type="date" name="fechai" id="fechai" value="<?php echo $datos[0][2]; ?>"></td>
                         </tr>
                         <tr>
                             <td><label  for="fechaf">Fecha final</label></td>
-                            <td><input  type="date" name="fechaf" id="fechaf"></td>
+                            <td><input  type="date" name="fechaf" id="fechaf" value="<?php echo $datos[0][3]; ?>"></td>
                         </tr>
                         <tr>
                             <td><label  for="estatus">Estatus</label></td>
-                            <td><select  id="estatus" name="estatus">
+                            <td><select  id="estatus" name="estatus" value="<?php echo $datos[0][4]; ?>">
                                     <option>Por iniciar</option>
                                     <option>En proceso</option>
                                     <option>Cancelado</option>
@@ -71,23 +69,14 @@ if (isset($_POST['nombre'])) {
                                 </select>
                             </td>
                         </tr>
-                        <tr><td></td>
-                            <td>
-                                <select class="" id="opc" name="opc" onChange="ocultar_insertar()">
-                                    <option >Con conexion</option>
-                                    <option >Sin conexion</option>
-                                </select>
-                            </td>
-                        </tr>
-
 
                         <tr>
                             <td></td>   
                             <td>
                                 <div></div>
-                                <input type= "hidden" id="id_usuario" name="id_usuario" value= "<?php echo $_SESSION['id_usuario']; ?>">
-                                <button type="submit" class="btn-danger" id="guardar1" name="guardar1">Registrar2</button>
-                                <input  type="button" class="btn-danger" id="guardar2" name="guardar2"value="Registrar" style="visibility: hidden;">
+
+                                <button type="submit" class="btn-danger" id="actualiza" id="actualiza" name="actualiza">Actualiza</button>
+
                             </td>
                         </tr>
                     </table>    
