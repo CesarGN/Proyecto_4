@@ -27,9 +27,12 @@ if (isset($_POST['nombre'])) {
         <script src="../Js/insertar.js"></script>
     </head>
     <body>
+        <div id="Principal">
+            <h5>Registra Tarea!!!</h5>
+        </div>
         <div id="imagen"></div>
         <div id="formulario">
-            <div id="titulo"> <h3>Registra Tarea!!!</h3> </div>
+            <div id="titulo"> <h3>DATOS :</h3> </div>
             <form method="post" >
                 <div class="centro">
 
