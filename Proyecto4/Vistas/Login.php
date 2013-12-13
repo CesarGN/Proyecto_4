@@ -34,7 +34,7 @@ if (isset($_POST['entrar'])) {
 
 
                         <button id="entrar" type="submit" name="entrar" value="Entrar" class="entrar">Entrar</button>
-
+                        <a href="Registro.php">Registrate</a>
                     </fieldset>
                 </form>
             </div>

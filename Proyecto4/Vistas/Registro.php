@@ -47,7 +47,8 @@ if (isset($_POST['entrar'])) {
                         </tr>
                         <tr>
                             <td></td>
-                            <td><div></div><button id="entrar" name="entrar" type="submit" value="Entrar" class="entrar">Entrar</button></td>
+                            <td><div></div><button id="entrar" name="entrar" type="submit" value="Entrar" class="entrar">Registrate</button></td>
+                            <td><a href="Login.php">Logueate</a></td>
                         </tr>
                     </table>    
                 </div>
