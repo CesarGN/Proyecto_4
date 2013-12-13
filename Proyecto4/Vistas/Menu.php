@@ -41,10 +41,15 @@ if (!isset($_SESSION['usuario'])) {
         <div id="imagenmenu"></div>
 
         <div id="creditos" >
+<<<<<<< HEAD
             Garcia Noyola Cesar Fernando
             Alvarez Miranda Omar
             Gomez Lopez Elias
             INTEGRANTES EQUIPO :       
+=======
+             INTEGRANTES EQUIPO :       
+
+>>>>>>> 14c03b2a5adc8bacef377185dc97a8031587b169
         </div>
         <div id="creditos"> * Garcia Noyola Cesar Fernando</div>
         <div id="creditos"> * Alvarez Miranda Omar </div>

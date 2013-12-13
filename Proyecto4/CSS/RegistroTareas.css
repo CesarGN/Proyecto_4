@@ -197,3 +197,174 @@ td{
     background:url(../Recursos/actualizagrande.jpg) no-repeat;
     background-size: 100% 100%;
 }
+
+@media screen and (max-width:800px){
+
+    #nombre{
+        width: 80%;
+        padding:4px;
+
+    }
+
+    #materia{
+        width: 80%;
+        padding:4px;
+    }
+
+    #fechai{
+        width: 80%;
+        padding:4px;
+    }
+
+    #fechaf{
+        width: 80%;
+        padding:4px;
+
+    }
+
+
+    #estatus{
+        width: 80%;
+        padding:4px;
+    }
+
+    #opc{
+        width: 80%;
+        padding:4px;
+    }
+
+
+
+    #imagen{
+        width: 550px;
+        height: 420px;
+        position: absolute; 
+        background:url(../Recursos/registrotareagrande.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #Principal{
+        width: 100%;
+        height: 5%;
+        position: initial; 
+    }
+
+    #Principal h5{
+        font-size:25px;
+    }
+
+    #formulario h3{
+        font-size:25px;
+    }
+
+    #formulario{
+        height: 75%;
+    }
+
+    #btn-danger{
+        width:50%;
+        height: 50%;
+    }
+
+    #imagen2{
+        width: 550px;
+        height: 420px;
+        position: absolute; 
+        background:url(../Recursos/actualizagrande.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+
+@media screen and (max-width:480px){
+
+    #fmenu{
+        width: 5%;
+        height: max-content;
+    }
+
+    #Principal{
+        width: 100%;
+        height: 5%;
+        position: initial; 
+    }
+
+    #Principal h5{
+        font-size:5px;
+    }
+    
+    #nombre{
+        width: 80%;
+        padding:4px;
+
+    }
+
+    #materia{
+        width: 80%;
+        padding:4px;
+    }
+
+    #fechai{
+        width: 80%;
+        padding:4px;
+    }
+
+    #fechaf{
+        width: 80%;
+        padding:4px;
+
+    }
+
+
+    #estatus{
+        width: 80%;
+        padding:4px;
+    }
+
+    #opc{
+        width: 80%;
+        padding:4px;
+    }
+
+
+
+    #imagen{
+        width: 550px;
+        height: 420px;
+        position: absolute; 
+        background:url(../Recursos/registrotareagrande.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #Principal{
+        width: 100%;
+        height: 5%;
+        position: initial; 
+    }
+
+    #Principal h5{
+        font-size:25px;
+    }
+
+    #formulario h3{
+        font-size:25px;
+    }
+
+    #formulario{
+        height: 75%;
+    }
+
+    #btn-danger{
+        width:50%;
+        height: 50%;
+    }
+
+    #imagen2{
+        width: 550px;
+        height: 420px;
+        position: absolute; 
+        background:url(../Recursos/actualizagrande.jpg) no-repeat;
+        background-size: 100% 100%;
+    }
+    
+}
