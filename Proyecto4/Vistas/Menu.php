@@ -3,6 +3,7 @@ session_start();
 if (!isset($_SESSION['usuario'])) {
     header("Location: Login.php");
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +14,7 @@ if (!isset($_SESSION['usuario'])) {
         <link href="../CSS/General.css" rel="stylesheet">
         <link href="../CSS/Menu.css" rel="stylesheet">
         <script src="../Js/sincroniza.js"></script>
-
+        <?PHP // include ('../Js/sincroniza.php'); ?>
     </head>
     <body>
         <div id="Principal">
@@ -30,7 +31,7 @@ if (!isset($_SESSION['usuario'])) {
                         <td> <a href="Ver.php"><button class="crear"> Ver Tarea</button></a></td>
                     </tr>
                     <tr> 
-                        <td><a href=""> <button id="sincroniza"class="crear"> Sincronizar</button></a></td>
+                        <td><a href=""> <button id="sincroniza" class="crear"> Sincronizar</button></a></td>
                     </tr>
                 </table>    
             </div>
@@ -40,16 +41,14 @@ if (!isset($_SESSION['usuario'])) {
         <div id="imagenmenu"></div>
 
         <div id="creditos" >
-<<<<<<< HEAD
             Garcia Noyola Cesar Fernando
             Alvarez Miranda Omar
             Gomez Lopez Elias
-=======
-             INTEGRANTES EQUIPO :       
->>>>>>> 560c1fe74c8a0890fc96b5c6372641ffe352b651
+            INTEGRANTES EQUIPO :       
         </div>
-         <div id="creditos"> * Garcia Noyola Cesar Fernando</div>
-         <div id="creditos"> * Alvarez Miranda Omar </div>
-         <div id="creditos"> * Gomez Lopez Elias</div>
+        <div id="creditos"> * Garcia Noyola Cesar Fernando</div>
+        <div id="creditos"> * Alvarez Miranda Omar </div>
+        <div id="creditos"> * Gomez Lopez Elias</div>
+        <div id="imprimir"></div>
     </body>
 </html>

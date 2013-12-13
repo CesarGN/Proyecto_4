@@ -5,8 +5,8 @@ var ListaProyectos;
 var conexion;
 
 
-function inicializa(){
-    
+function inicializa() {
+
     if (!window.openDatabase)
     {
         alert('Tu navegador no soporta Web SQL....');
@@ -17,21 +17,6 @@ function inicializa(){
             '1.0',
             'BD de Proyectos',
             5 * 1024 * 1024);
-    db.transaction(function(tx)
-    {
-        tx.executeSql('create table if not exists Proyectos(id integer primary key autoincrement,proyecto String,NoId String, Nombre String, feI String, feT String, Estatus String )',
-                [],
-                function()
-                {
-                    console.log('Tabla Creada')
-                },
-                function(t, e)
-                {
-                    console.log('Error al Crear la tabla' + e.message)
-                }
-
-        );
-    });
 
     var sincro = document.getElementById('sincroniza');
 
@@ -40,22 +25,33 @@ function inicializa(){
 
         db.transaction(function(tx)
         {
+            var arreglo = new array();
+            var aux = new array();
             tx.executeSql('Select * from Proyectos', [],
                     function(tx, results) {
+
                         var len = results.rows.length, i;
+
                         for (i = 0; i < len; i++) {
-                            var nombre = results.rows.item(i).proyecto;
-                            var estatus = results.rows.item(i).Estatus;
-                            var id_usuario = results.rows.item(i).NoId;
-                            var fechai = results.rows.item(i).feI;
-                            var fechaf = results.rows.item(i).feT;
-                            var materia = results.rows.item(i).Nombre;
-                            alert(id_usuario+"  "+nombre+" "+materia+""+fechai+""+fechaf+""+estatus);
+
+                            // document.write(results.rows.item(i).proyecto);
+                            aux[0] = results.rows.item(i).proyecto;
+                            //var nombre = results.rows.item(i).proyecto;
+                            aux[1] = results.rows.item(i).Estatus;
+                            //var estatus = results.rows.item(i).Estatus;
+                            aux[2] = results.rows.item(i).NoId;
+                            //var id_usuario = results.rows.item(i).NoId;
+                            aux[3] = results.rows.item(i).feI;
+                            //var fechai = results.rows.item(i).feI;
+                            aux[4] = results.rows.item(i).feT;
+                            //var fechaf = results.rows.item(i).feT;
+                            aux[5] = results.rows.item(i).Nombre;
+                            // var materia = results.rows.item(i).Nombre;
+                            arreglo[i] = aux;
                             
-                         
-
+                             alert(aux[0]);
                         }
-
+                        document.write(arreglo[0][0]);
                     },
                     function(t, e)
                     {

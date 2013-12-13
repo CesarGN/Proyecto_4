@@ -80,10 +80,10 @@ table{
     background-position: -202px -110px;
 }
 
-<<<<<<< HEAD
+
 .icono#borrar{
     background-position: -383px -289px;
-=======
+}
 #iconos #borrar{
     background-position: -381px -289px;
 }
@@ -127,7 +127,4 @@ table{
         width:auto;
         height:52px;
     }
-    
-    
->>>>>>> 560c1fe74c8a0890fc96b5c6372641ffe352b651
 }
