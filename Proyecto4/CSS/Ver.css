@@ -51,15 +51,17 @@ table{
 }
 #iconos a{    
     background:url('../Recursos/icono.jpg') no-repeat;
-    height:55px;
-    width:55px;
+    height:53px;
+    width:53px;
     display:block;
-    position:relative;
+    position: inherit;
+    
 }
-#iconos #modificar{
-    background-position: -201px -110px;
+.icono#modificar{
+       
+    background-position: -202px -110px;
 }
 
-#iconos #borrar{
-    background-position: -381px -289px;
+.icono#borrar{
+    background-position: -383px -289px;
 }

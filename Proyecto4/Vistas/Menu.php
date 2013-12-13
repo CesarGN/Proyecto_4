@@ -1,6 +1,6 @@
-<?php 
+<?php
 session_start();
-if(!isset($_SESSION['usuario'])){
+if (!isset($_SESSION['usuario'])) {
     header("Location: Login.php");
 }
 ?>
@@ -12,48 +12,37 @@ if(!isset($_SESSION['usuario'])){
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="../CSS/General.css" rel="stylesheet">
         <link href="../CSS/Menu.css" rel="stylesheet">
-        
+        <script src="../Js/sincroniza.js"></script>
+
     </head>
     <body>
         <div id="Principal">
             <h5>Men&uacute;!!!</h5></div>
-        
+
         <div id="fmenu">
-           
+
             <div class="centro">
                 <table>
                     <tr>
-                        <td>
-                    <button class="crear">
-                        Crear Tarea
-                    </button>
-                            </td>
+                        <td><a href="RegistroTareas.php"> <button  class="crear">Crear Tarea</button></a></td>
                     </tr>
                     <tr>
-                        <td>
-                    <button class="crear">
-                        Ver Tarea   
-                    </button>
-                            </td>
+                        <td> <a href="Ver.php"><button class="crear"> Ver Tarea</button></a></td>
                     </tr>
-                    <tr>
-                        <td>
-                    <button class="crear">
-                        Sincronizar
-                    </button>
-                            </td>
+                    <tr> 
+                        <td><a href=""> <button id="sincroniza"class="crear"> Sincronizar</button></a></td>
                     </tr>
                 </table>    
             </div>
 
         </div>
-        
+
         <div id="imagenmenu"></div>
-        
+
         <div id="creditos" >
-        Garcia Noyola Cesar Fernando
-        Alvarez Miranda Omar
-        Gomez Lopez Elias
+            Garcia Noyola Cesar Fernando
+            Alvarez Miranda Omar
+            Gomez Lopez Elias
         </div>
     </body>
 </html>

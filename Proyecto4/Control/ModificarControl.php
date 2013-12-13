@@ -13,6 +13,8 @@ class ModificarControl extends Modelo{
         $rs=$this->sql($sql, "ModificarControl actualiza");
         $this->alerta("ACTUALIZACIÓN HECHA");
         }
+        
+      
 
 }
 ?>

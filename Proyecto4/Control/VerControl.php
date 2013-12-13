@@ -12,6 +12,8 @@ class VerControl extends Modelo {
         //}
         return $rows;
     }
+    
+      
 
 }
 

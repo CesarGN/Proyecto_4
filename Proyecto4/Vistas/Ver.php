@@ -39,19 +39,25 @@ $id_usu = $_SESSION['id_usuario'];
                         </tr>
                     </thead>
                     <tbody>
-                        <?php foreach ($proyectos as $key => $value) : ?>
-                            <tr  id="iconos">
+                      
+                        <?php 
+//                        echo '<pre>';
+//                        print_r($proyectos);
+//                        echo '</pre>';
+//                        
+                        foreach ($proyectos as $key => $value) : ?>
+                            <tr id="iconos">
+                                <td><?php echo $proyectos[$key]['nombre']; ?></td>
+                                <td><?php echo $proyectos[$key]['materia']; ?></td>
+                                <td><?php echo $proyectos[$key]['fecha_inicio']; ?></td>
+                                <td><?php echo $proyectos[$key]['fecha_final']; ?></td>
+                                <td><?php echo $proyectos[$key]['estatus']; ?></td>
 
-                                <td><?php echo $proyectos[$key]['nombre'] ?></td>
-                                <td><?php echo $proyectos[$key]['materia'] ?></td>
-                                <td><?php echo $proyectos[$key]['fecha_inicio'] ?></td>
-                                <td><?php echo $proyectos[$key]['fecha_final'] ?></td>
-                                <td><?php echo $proyectos[$key]['estatus'] ?></td>
                                 <?php $url_m = "Modificar.php?id_pro=" . $proyectos[$key]['id_proyecto'] ?>
                                 <?php $url_b = "Borrar.php?id_pro=" . $proyectos[$key]['id_proyecto'] ?>
-                                
-                                <td ><a class="icono" id="modificar" href="<?php echo $url_m;?>"></a></td>
-                                <td ><a class="icono" id="borrar" href="<?php echo $url_b;?>"></a></td>   
+
+                                <td><a class="icono" id="modificar" href="<?php  echo $url_m; ?>"></a></td>
+                                <td><a class="icono" id="borrar"    href="<?php  echo $url_b; ?>"></a></td>   
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
